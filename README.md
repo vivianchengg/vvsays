@@ -42,6 +42,7 @@ If you want to try locally:
 git clone https://github.com/vivianchengg/vvsays.git
 cd vvsays
 npm install
+```
 
 ---
 
