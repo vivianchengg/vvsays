@@ -48,5 +48,5 @@ npm install
 
 ## 🚀 Getting Started (Demo)
 
-**Apr 2025: Demo Site coming soon**
+**Apr 2025: Demo site coming soon**
 
