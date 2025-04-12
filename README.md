@@ -27,7 +27,7 @@ Hi there! I'm Vivian 🐰 — this is my personal interactive profile page, buil
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
 - [Material UI (MUI)](https://mui.com/)
-- [Gemini API](https://ai.google.dev/)(gemini-2.0-flash) 
+- [Gemini API](https://ai.google.dev/) (gemini-2.0-flash) 
 - Native Web APIs:
   - `SpeechRecognition` (voice input)
   - `SpeechSynthesis` (voice output)
