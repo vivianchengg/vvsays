@@ -15,7 +15,7 @@ Hi there! I'm Vivian 🐰 — this is my personal interactive profile page, buil
 
 - 🎙️ Voice input with browser speech recognition
 - 💬 Typing animation for replies
-- 🧠 Gemini AI powered answers based on my bio
+- 🧠 Google's Gemini AI-powered answers based on my bio
 - 🔊 Speech synthesis (your browser reads the reply!)
 - 🐰 Animated emoji avatar
 - Built-in UX to match a fun, playful vibe
