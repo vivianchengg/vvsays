@@ -48,5 +48,5 @@ npm install
 
 ## 🚀 Getting Started (Demo)
 
-[demo site**](https://vvsays.vercel.app/)
+[demo site](https://vvsays.vercel.app/)
 
