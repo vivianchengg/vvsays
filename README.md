@@ -4,8 +4,7 @@ Hi there! I'm Vivian 🐰 — this is my personal interactive profile page, buil
 
 📢 **Update (Apr 2025):** 
 - 🎨 new visual revamps
-- 🌷 VivianBot (voice AI assistant) is live  
-— more features coming soon 🎀
+- 🌷 VivianBot (voice AI assistant) is live  — more features coming soon 🎀
 
 ---
 
