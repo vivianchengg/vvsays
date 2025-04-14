@@ -72,16 +72,14 @@ export const AboutCarousel = () => {
       return;
     }
 
+    // trans to side cards
     const total = cards.length;
     const forwardSteps = (index - centreIndex + total) % total;
     const backwardSteps = (centreIndex - index + total) % total;
     const stepDiff = forwardSteps <= backwardSteps ? forwardSteps : -backwardSteps;
     setRotation((prev) => prev - stepDiff * angleStep);
-
-    // trans to side cards
     setCentreIndex(index);
     setIsFlipped(false);
-
   };
 
   return (
