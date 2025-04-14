@@ -3,7 +3,7 @@
 Hi there! I'm Vivian 🐰 — this is my personal interactive profile page, built with love, curiosity, and a sprinkle of AI.
 
 📢 **Update (Apr 2025):** 
-- 🎨 new visual revamps
+- 🎨 New visual revamps
 - 🌷 VivianBot (voice AI assistant) is live  — more features coming soon 🎀
 
 ---
