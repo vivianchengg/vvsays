@@ -1,6 +1,5 @@
 'use client';
 import { NavBar } from "@/components/NavBar";
-import styles from "./page.module.css";
 import { Box } from "@mui/material";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";

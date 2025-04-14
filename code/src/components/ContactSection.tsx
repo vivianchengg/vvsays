@@ -30,7 +30,7 @@ export const ContactSection = () => {
             display: 'inline-block',
           }}
         >
-          Let's connect!
+          Let&apos;s connect!
         </Typography>
       </Box>
       <Box

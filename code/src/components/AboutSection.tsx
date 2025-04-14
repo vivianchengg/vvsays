@@ -1,6 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import { AboutCard } from "./AboutCard";
-import { useState } from "react";
 import { AboutCarousel } from "./AboutCarousel";
 
 export const chocolateWave = `
