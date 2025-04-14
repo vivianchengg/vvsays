@@ -177,6 +177,7 @@ export default function Vvchat() {
               variant='contained'
               color={isListening ? 'error' : 'primary'}
               sx={{ fontWeight: 'bold' }}
+              disabled={isAvatarAnimate}
             >
               {isListening ? "🛑 Stop Listening" : "🎙️ Start Talking"}
             </Button>
