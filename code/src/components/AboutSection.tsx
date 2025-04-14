@@ -3,7 +3,7 @@ import { AboutCard } from "./AboutCard";
 import { useState } from "react";
 import { AboutCarousel } from "./AboutCarousel";
 
-const chocolateWave = `
+export const chocolateWave = `
   linear-gradient(
     270deg,
     #2E1B12,
