@@ -5,7 +5,7 @@ export const getDesignTokens = (mode: 'light' | 'dark'): ThemeOptions => ({
     mode,
     ...(mode === 'light'
       ? {
-          background: { default: '#DAD5D1' },
+          background: { default: '#FCF8ED' },
           text: { primary: '#2F2E2D' },
           primary: { main: '#2F2E2D' },
         }

@@ -90,3 +90,15 @@ a {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wave-bg {
+  background: linear-gradient(270deg, #fba5b4, #fde1c0, #f89aaa);
+  background-size: 400% 400%;
+  animation: wave 12s ease-in-out infinite;
+}

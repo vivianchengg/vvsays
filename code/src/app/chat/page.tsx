@@ -34,11 +34,6 @@ export default function Vvchat() {
   const recognitionRef = useRef<any>(null);
 
   useEffect(() => {
-    const voices = window.speechSynthesis.getVoices();
-    console.log('🔊 Available voices:', voices);
-  }, []);
-
-  useEffect(() => {
     if (!subtitle || !isSpeaking) {
       return;
     }
