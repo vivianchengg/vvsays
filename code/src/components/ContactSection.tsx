@@ -23,6 +23,7 @@ export const ContactSection = () => {
             fontSize: '35px',
             fontWeight: 900,
             fontFamily: "'Playfair Display', serif",
+            fontStyle: 'italic',
             background: chocolateWave,
             backgroundSize: '400% 400%',
             WebkitBackgroundClip: 'text',

@@ -45,7 +45,9 @@ export const NavBar = ({ onHeroClick, onAboutClick, onContactClick }: Props) => 
                 fontFamily: '"Playfair Display", serif',
                 letterSpacing: 1,
                 fontSize: '2rem',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                fontWeight: '900',
+                fontStyle: 'italic',
               }}
               onClick={onHeroClick}
             >

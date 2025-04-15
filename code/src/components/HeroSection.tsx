@@ -33,6 +33,7 @@ export const HeroSection = ({ onArrowClick }: Props) => {
               fontSize="36"
               fontFamily="'Playfair Display', serif"
               fontWeight="900"
+              fontStyle="italic"
             >
               <textPath href="#arc" startOffset="50%" textAnchor="middle">
                 WELCOME TO MY PAGE

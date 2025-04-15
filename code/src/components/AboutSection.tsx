@@ -32,6 +32,7 @@ export const AboutSection = () => {
           sx={{
             fontSize: '35px',
             fontWeight: 900,
+            fontStyle: 'italic',
             fontFamily: "'Playfair Display', serif",
             background: chocolateWave,
             backgroundSize: '400% 400%',
