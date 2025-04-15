@@ -5,23 +5,23 @@ import { AboutCard } from "./AboutCard";
 const cards = [
   {
     frontImg: '/assets/grumpy.png',
-    backText: 'Grumpy on the outside, soft on the inside 💙',
+    backText: '🧠 I’m a curious mind - I love figuring out how things work — whether it’s AI, a new API, or a weird frontend bug at 2am.',
   },
   {
     frontImg: '/assets/lovealot.png',
-    backText: 'Spreading love one hug at a time 💖',
+    backText: '👩🏻‍💻 My go-to stack: Python, Typescript, React + more, and always exploring for sure!',
   },
   {
     frontImg: '/assets/friend.png',
-    backText: 'Always here when you need a friend 🤗',
+    backText: '🏎️ I’ve worked on real-world projects - From racecar dashboards with Redback Racing to AI investing models — I like mixing code with purpose.',
   },
   {
     frontImg: '/assets/bedtime.png',
-    backText: 'Bringing sweet dreams and starlight 🌙✨',
+    backText: '💬 I speak three languages - English, Cantonese, and Mandarin, and I love blending different perspectives wherever I go.',
   },
   {
     frontImg: '/assets/goodluck.png',
-    backText: 'Lucky charm activated 🍀💫',
+    backText: '🎀 Beyond coding, I care deeply about user experience and team flow. I often take initiative to coordinate projects — organizing sprints in Jira, facilitating Scrum standups, and keeping Agile workflows smooth. I love connecting ideas to execution.',
   },
 ];
 

@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { chocolateWave } from "./AboutSection";
+import { ContactBubble } from "./ContactBubble";
 
 export const ContactSection = () => {
   return (
@@ -39,9 +40,11 @@ export const ContactSection = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          position: 'relative'
         }}
       >
-        <Typography variant="h5">🚧 This section is under construction - stay tuned! 🚧</Typography>
+        <ContactBubble contactType="linkedin" top="10%" left="20%" animationDelay="0s" />
+        <ContactBubble contactType="github" top="40%" left="50%" animationDelay="1s" />
       </Box>
     </Box>
   );

@@ -9,7 +9,6 @@ interface Props {
 
 export const AboutCard = ({ frontImg, backText, isFlipped, onClick }: Props) => {
   const getColor = (frontImg: string) => {
-    console.log(frontImg)
     if (frontImg == '/assets/grumpy.png') {
       return '#D0E4EE'
     } else if (frontImg == '/assets/lovealot.png') {
