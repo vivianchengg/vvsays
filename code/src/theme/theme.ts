@@ -10,9 +10,9 @@ export const getDesignTokens = (mode: 'light' | 'dark'): ThemeOptions => ({
           primary: { main: '#2F2E2D' },
         }
       : {
-          background: { default: '#121212' },
-          text: { primary: '#f5f5f5' },
-          primary: { main: '#ff90cf' },
+        background: { default: '#FCF8ED' },
+        text: { primary: '#2F2E2D' },
+        primary: { main: '#2F2E2D' },
         }),
   },
   typography: {
