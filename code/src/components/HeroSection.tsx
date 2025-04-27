@@ -22,7 +22,7 @@ export const HeroSection = ({ onArrowClick }: Props) => {
     >
       <Box flex={'2'} sx={{ alignContent: 'center' }}>
         <Box>
-          <svg width={isMobile ? '90%' : '60%'} height="25%" viewBox="0 0 500 150">
+          <svg width={isMobile ? '70%' : '50%'} height="25%" viewBox="0 0 500 150">
             <defs>
               <path
                 id="arc"
@@ -48,7 +48,7 @@ export const HeroSection = ({ onArrowClick }: Props) => {
             src="/assets/memoji.gif"
             alt="Animated avatar"
             style={{
-              width: isMobile ? '70%' : '45%',
+              width: isMobile ? '70%' : '30%',
               height: 'auto',
             }}
           />
