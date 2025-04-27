@@ -1,6 +1,6 @@
 'use client';
 import { NavBar } from "@/components/NavBar";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -11,6 +11,9 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
+  const isMobile = useMediaQuery('(max-width:700px)');
+  const scrollMT = isMobile ? '84px' : '64px'
+
   const scrollToRef = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -18,16 +21,15 @@ export default function Home() {
   return (
     <Box
       height={'100vh'}
-      minWidth={'700px'}
     >
       <NavBar onHeroClick={() => scrollToRef(heroRef)} onAboutClick={() => scrollToRef(aboutRef)} onContactClick={() => scrollToRef(contactRef)}/>
-      <div ref={heroRef} style={{ scrollMarginTop: '64px' }}>
+      <div ref={heroRef} style={{ scrollMarginTop: scrollMT}}>
         <HeroSection onArrowClick={() => scrollToRef(aboutRef)}/>
       </div>
-      <div ref={aboutRef} style={{ scrollMarginTop: '64px' }}>
+      <div ref={aboutRef} style={{ scrollMarginTop: scrollMT }}>
         <AboutSection />
       </div>
-      <div ref={contactRef} style={{ scrollMarginTop: '64px' }}>
+      <div ref={contactRef} style={{ scrollMarginTop: scrollMT }}>
         <ContactSection />
       </div>
     </Box>

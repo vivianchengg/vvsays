@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 
 interface Props {
   frontImg: string;
@@ -23,12 +23,14 @@ export const AboutCard = ({ frontImg, backText, isFlipped, onClick }: Props) => 
     return 'white'
   };
 
+  const isMobile = useMediaQuery('(max-width:700px)');
+
   return (
     <Box
       onClick={onClick}
       sx={{
-        width: 250,
-        height: 350,
+        width: isMobile ? 200 : 250,
+        height: isMobile ? 300 : 350,
         perspective: '1000px',
         cursor: 'pointer'
       }}

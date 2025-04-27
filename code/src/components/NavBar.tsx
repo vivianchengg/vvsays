@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar, Typography, useMediaQuery } from "@mui/material";
 import { useRouter } from "next/navigation";
 
 interface Props {
@@ -9,6 +9,7 @@ interface Props {
 
 export const NavBar = ({ onHeroClick, onAboutClick, onContactClick }: Props) => {
   const router = useRouter();
+  const isMobile = useMediaQuery('(max-width:700px)');
 
   return (
     <Box
@@ -25,7 +26,14 @@ export const NavBar = ({ onHeroClick, onAboutClick, onContactClick }: Props) => 
           boxShadow: 'none'
         }}
       >
-        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            flexDirection: isMobile ? 'column' : 'row'
+
+          }}
+        >
+          {!isMobile &&
           <Box
             sx={{
               flex: 2,
@@ -37,7 +45,7 @@ export const NavBar = ({ onHeroClick, onAboutClick, onContactClick }: Props) => 
             <Button onClick={onAboutClick}><Typography fontWeight={'bold'} color="#4F3B30">ABOUT</Typography></Button>
             <Button onClick={() => router.push('/chat')}><Typography fontWeight={'bold'} color="#4F3B30">CHAT</Typography></Button>
             <Button onClick={onContactClick}><Typography fontWeight={'bold'} color="#4F3B30">CONTACT</Typography></Button>
-          </Box>
+          </Box>}
           <Box flex={'1'}>
             <Typography
               textAlign={'center'}
@@ -54,7 +62,19 @@ export const NavBar = ({ onHeroClick, onAboutClick, onContactClick }: Props) => 
               vivian
             </Typography>
           </Box>
-          <Box flex={'2'}/>
+          {isMobile &&
+          <Box
+            sx={{
+              display: 'flex',
+              gap: 2,
+              textAlign: 'center'
+            }}
+          >
+            <Button onClick={onAboutClick}><Typography fontWeight={'bold'} color="#4F3B30">ABOUT</Typography></Button>
+            <Button onClick={() => router.push('/chat')}><Typography fontWeight={'bold'} color="#4F3B30">CHAT</Typography></Button>
+            <Button onClick={onContactClick}><Typography fontWeight={'bold'} color="#4F3B30">CONTACT</Typography></Button>
+          </Box>}
+          {!isMobile && <Box flex={'2'}/>}
         </Toolbar>
       </AppBar>
     </Box>

@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 interface Props {
@@ -6,21 +6,23 @@ interface Props {
 }
 
 export const HeroSection = ({ onArrowClick }: Props) => {
+  const isMobile = useMediaQuery('(max-width:700px)');
+
   return (
     <Box
       sx={{
         bgcolor: 'pink',
-        height: 'calc(100vh - 64px)',
+        height: isMobile ? 'calc(100vh - 84px)' : 'calc(100vh - 64px)',
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
       }}
-      mt={'64px'}
+      mt={isMobile ? '84px' : '64px'}
       className="wave-bg"
     >
       <Box flex={'2'} sx={{ alignContent: 'center' }}>
         <Box>
-          <svg width="500px" height="25%" viewBox="0 0 500 150">
+          <svg width={isMobile ? '90%' : '60%'} height="25%" viewBox="0 0 500 150">
             <defs>
               <path
                 id="arc"
@@ -46,22 +48,23 @@ export const HeroSection = ({ onArrowClick }: Props) => {
             src="/assets/memoji.gif"
             alt="Animated avatar"
             style={{
-              width: '370px',
+              width: isMobile ? '70%' : '45%',
               height: 'auto',
             }}
           />
         </Box>
       </Box>
-      <Box flex={'1'} alignContent={'center'}>
-          <Typography
-            fontWeight={'bold'}
-            color="#4F3B30"
-            fontFamily={'karla'}
-            fontSize={'22px'}
-            mb={'10px'}
-          >
-            Hi there! Wanna get to know more about me?
-          </Typography>
+      <Box display={'flex'} flex={'1'} alignContent={'center'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
+        <Typography
+          fontWeight={'bold'}
+          color="#4F3B30"
+          fontFamily={'karla'}
+          fontSize={'22px'}
+          mb={'10px'}
+          width={'50%'}
+        >
+          Hi there! Wanna get to know more about me?
+        </Typography>
         <Button onClick={onArrowClick}>
           <ExpandMoreIcon sx={{fontSize: '40px', color: '#4F3B30'}}/>
         </Button>

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import { useRef, useState } from "react";
 import { AboutCard } from "./AboutCard";
 
@@ -29,6 +29,8 @@ export const AboutCarousel = () => {
   const [centreIndex, setCentreIndex] = useState(0);
   const [rotation, setRotation] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const isMobile = useMediaQuery('(max-width:700px)');
 
   const angleStep = 360 / cards.length;
   const radius = 250;
@@ -98,10 +100,9 @@ export const AboutCarousel = () => {
       <Box
         sx={{
           position: 'relative',
-          width: 250,
-          height: 350,
+          width: isMobile ? 200 : 250,
+          height: isMobile ? 300 : 350,
           transformStyle: 'preserve-3d',
-          // transform: `rotateY(${-centreIndex * angleStep}deg)`,
           transform: `rotateY(${rotation}deg)`,
           transition: 'transform 1s ease',
         }}

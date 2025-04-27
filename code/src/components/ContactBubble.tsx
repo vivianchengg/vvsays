@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -10,7 +10,8 @@ interface Props {
 }
 
 export const ContactBubble = ({ contactType, top, left, animationDelay}: Props) => {
-  const size = Math.random() * (300 - 150) + 150;
+  const isMobile = useMediaQuery('(max-width:700px)');
+  const size = isMobile ? Math.random() * (150 - 100) + 100 : Math.random() * (300 - 150) + 150;
 
   const iconStyle = {
     color: '#4F3B30',
